@@ -1,0 +1,6 @@
+a=int(input("enter balance amount:"))
+b=int(input("enter withdrawel amount:"))
+if(a-b>0 and b%100==0):
+   print("withdrawel successfull\nbalance=",a-b)
+else:
+   print("insufficient balance or amount must be in multiples of 100")
