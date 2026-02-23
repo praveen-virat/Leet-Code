@@ -1,0 +1,15 @@
+ip=eval(input("enter array of string:"))
+ji=0
+count=0
+arr=[]
+for i in range(len(ip)):
+   arr.append(len(ip[i]))
+mini=min(arr)
+j=0
+for k in range(mini):
+   if(ip[j][k]==ip[j+1][k]==ip[j+2][k]):
+      count+=1
+   else:
+      break
+ans=ip[0]
+print(ans[0:count])
